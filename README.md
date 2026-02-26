@@ -149,8 +149,5 @@ Nighitha T. N.
 
 ---
 
-### ⭐ If you found this project interesting, feel free to star the repository!
-
----
 
 ## ⭐ If you found this project useful, give it a star!
