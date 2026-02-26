@@ -1,0 +1,10 @@
+tensorflow
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+nltk
+pickle-mixin
+python-multipart
+pydantic
