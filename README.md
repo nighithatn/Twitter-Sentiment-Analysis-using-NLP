@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Deployment-green)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
 
