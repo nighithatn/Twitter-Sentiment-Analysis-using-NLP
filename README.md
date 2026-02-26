@@ -23,22 +23,6 @@ The system classifies tweets into:
 
 ---
 
-## 🏗️ System Architecture
-
-<p align="center">
-  <img src="screenshots/architecture.png" width="850">
-</p>
-
-This architecture shows:
-
-- Data preprocessing pipeline  
-- Tokenization & padding  
-- BiLSTM deep learning model  
-- Model saving  
-- FastAPI deployment for real-time inference  
-
----
-
 ## 🔄 Workflow
 
 1. Dataset loading  
@@ -64,18 +48,6 @@ This architecture shows:
 
 ---
 
-## 🧠 Model Architecture
-
-- Embedding Layer  
-- Bidirectional LSTM  
-- Dropout layers  
-- Dense + Softmax output  
-
-Loss Function: `sparse_categorical_crossentropy`  
-Optimizer: `Adam`
-
----
-
 ## 📊 Model Performance
 
 | Metric | Score |
@@ -90,15 +62,39 @@ Optimizer: `Adam`
 
 ---
 
+## 🏗️ System Architecture
+
+![Architecture Diagram](screenshots/architecture.png)
+
+---
+
+This architecture shows:
+
+- Data preprocessing pipeline  
+- Tokenization & padding  
+- BiLSTM deep learning model  
+- Model saving  
+- FastAPI deployment for real-time inference  
+
+---
+
+## 🧠 Model Architecture
+
+- Embedding Layer  
+- Bidirectional LSTM  
+- Dropout layers  
+- Dense + Softmax output  
+
+Loss Function: `sparse_categorical_crossentropy`  
+Optimizer: `Adam`
+
+---
+
+
 ## 🚀 FastAPI Deployment
 
-The trained model is deployed using **FastAPI**.
+![FastAPI Swagger](screenshots/fastapi-swagger.png)
 
-### 🖥️ Swagger UI Preview
-
-<p align="center">
-  <img src="screenshots/fastapi-swagger.png" width="850">
-</p>
 
 ### ▶️ Run the API
 
