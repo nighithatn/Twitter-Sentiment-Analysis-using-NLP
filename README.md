@@ -23,52 +23,53 @@ The system classifies tweets into:
 
 ---
 
-## 🎯 Aim
+## 🏗️ System Architecture
 
-To build, evaluate, and deploy a deep learning model that performs sentiment classification on Twitter text data.
+<p align="center">
+  <img src="screenshots/architecture.png" width="850">
+</p>
 
----
+This architecture shows:
 
-## 🗂 Dataset
-
-- Twitter sentiment dataset
-- Columns: `text`, `sentiment`
-- 3-class classification problem
+- Data preprocessing pipeline  
+- Tokenization & padding  
+- BiLSTM deep learning model  
+- Model saving  
+- FastAPI deployment for real-time inference  
 
 ---
 
 ## 🔄 Workflow
 
-1. Dataset loading
-2. Text preprocessing
-3. Label encoding
-4. Train-test split
-5. Tokenization & padding
-6. BiLSTM model building
-7. Training with class weights
-8. Evaluation (Accuracy, Precision, Recall, F1)
-9. Model saving
-10. FastAPI deployment
+1. Dataset loading  
+2. Text preprocessing  
+3. Label encoding  
+4. Train-test split  
+5. Tokenization & padding  
+6. BiLSTM model training  
+7. Evaluation  
+8. Model saving  
+9. FastAPI deployment  
 
 ---
 
 ## 🧹 Text Preprocessing
 
-- Lowercasing
-- URL removal
-- Mention & hashtag removal
-- Special character removal
-- Stopword removal
-- Lemmatization
+- Lowercasing  
+- URL removal  
+- Mention & hashtag removal  
+- Special character removal  
+- Stopword removal  
+- Lemmatization  
 
 ---
 
 ## 🧠 Model Architecture
 
-- Embedding Layer
-- Bidirectional LSTM
-- Dropout
-- Dense + Softmax output
+- Embedding Layer  
+- Bidirectional LSTM  
+- Dropout layers  
+- Dense + Softmax output  
 
 Loss Function: `sparse_categorical_crossentropy`  
 Optimizer: `Adam`
@@ -83,30 +84,36 @@ Optimizer: `Adam`
 | Macro F1 | 0.69 |
 | Weighted F1 | 0.69 |
 
-- Positive sentiment predicted best
-- Neutral class most challenging
-- Balanced class performance
+- Positive sentiment predicted best  
+- Neutral class most challenging  
+- Balanced performance across classes  
 
 ---
 
 ## 🚀 FastAPI Deployment
 
-The trained model is deployed using FastAPI.
+The trained model is deployed using **FastAPI**.
 
-### Run the API:
+### 🖥️ Swagger UI Preview
+
+<p align="center">
+  <img src="screenshots/fastapi-swagger.png" width="850">
+</p>
+
+### ▶️ Run the API
 
 ```bash
 cd Api
 uvicorn app:app --reload
 ```
 
-### Open in browser:
+Open in browser:
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
-### Example API Request:
+### 📥 Example API Request
 
 ```json
 {
@@ -119,7 +126,7 @@ http://127.0.0.1:8000/docs
 ## 📁 Project Structure
 
 ```
-Twitter Sentiment Analysis using NLP/
+Twitter-Sentiment-Analysis-using-NLP/
 app.py
 dataLoader.py
 preprocessing.py
@@ -129,17 +136,16 @@ trainer.py
 evaluator.py
 saveUtils.py
 main.py
-requirements.txt
 ```
 
 ---
 
 ## 🔮 Future Improvements
 
-- Pretrained embeddings (GloVe, FastText)
-- Transformer models (BERT)
-- Cloud deployment
-- Frontend UI integration
+- Pretrained embeddings (GloVe, FastText)  
+- Transformer models (BERT)  
+- Cloud deployment  
+- Frontend UI integration  
 
 ---
 
@@ -149,5 +155,4 @@ Nighitha T. N.
 
 ---
 
-
-## ⭐ If you found this project useful, give it a star!
+⭐ If you found this project useful, consider giving it a star!
